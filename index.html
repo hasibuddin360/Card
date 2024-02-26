@@ -1,0 +1,150 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- all meta tag is here -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title and favicon is here -->
+    <title>Title name</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+
+    <!-- google font and font awesome link is here -->
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="" />
+
+    <!-- tailwind and daisyUI is here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- tailwind custom css -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+
+        .popular {
+          background-color: #fff;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-00 h-screen flex items-center justify-center">
+    <!-- header tag is here -->
+    <!-- main section is here -->
+    <main>
+      <div class="flex max-w-md w-full bg-white p-8 rounded-lg shadow-md">
+        <div class="mx-5">
+          <h2 class="text-2xl mb-4 font-black text-center">Welcome</h2>
+          <!-- Login Form -->
+          <form class="mb-6">
+            <div class="mb-4">
+              <label for="signup-email" class="block text-gray-700"> 
+                Email Address 
+              </label>
+              <input
+                type="email"
+                id="signup-email"
+                name="signup-email"
+                class="form-input mt-1 block w-full rounded-2xl"
+                required />
+            </div>
+            <div class="mb-4">
+              <label for="login-password" class="block text-gray-700"> 
+                Password
+              </label>
+              <input
+                type="password"
+                id="login-password"
+                name="login-password"
+                class="form-input mt-1 block w-full rounded-2xl"
+                required />
+            </div>
+            <div class="flex justify-center">
+              <button
+                type="submit"
+                class="w-[50%] item bg-purple-700 text-white py-2 px-4 rounded hover:bg-purple-900">
+                Log In
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- Signup Form -->
+        <div>
+          <form>
+            <h2 class="text-lg mb-4 font-black">New User? 
+              <span class="">Sign Up</span>
+            </h2>
+            <div class="mb-4">
+              <label for="signup-name" class="block text-gray-700">Name</label>
+              <input
+                type="text"
+                id="signup-name"
+                name="signup-name"
+                class="form-input mt-1 block w-full rounded-2xl"
+                required />
+            </div>
+            <div class="mb-4">
+              <label for="signup-email" class="block text-gray-700"> 
+                Email Address 
+              </label>
+              <input
+                type="email"
+                id="signup-email"
+                name="signup-email"
+                class="form-input mt-1 block w-full rounded-2xl"
+                required />
+            </div>
+            <div class="mb-4">
+              <label for="signup-password" class="block text-gray-700"> 
+                Password
+                </label>
+              <input
+                type="password"
+                id="signup-password"
+                name="signup-password"
+                class="form-input mt-1 block w-full rounded-2xl"
+                required />
+            </div>
+            <div class="flex justify-center">
+              <button
+                type="submit"
+                class="w-[50%] item bg-purple-700 text-white py-2 px-4 rounded hover:bg-purple-900">
+                Sign up
+              </button>
+            </div>
+          </form>
+          <!-- Forgot Password -->
+          <div class="mt-6 text-center">
+            <a href="#" class="text-sm text-gray-600 hover:underline">
+              Forgot Password?
+              </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- There is script Section -->
+    <script src="tailwind.config.js"></script>
+    <!-- footer tag is here -->
+    <footer></footer>
+  </body>
+</html>
